@@ -1,0 +1,16 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Souq Product Search2 :: Basic WebElements Automation Robot Framework   
+==============================================================================
+Verify basic search functionality :: This test case performs the b... | PASS |
+------------------------------------------------------------------------------
+Suites.Souq Product Search2 :: Basic WebElements Automation Robot ... | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\mohammad.shaikh\PycharmProjects\TestProject\pabot_results\1\output.xml

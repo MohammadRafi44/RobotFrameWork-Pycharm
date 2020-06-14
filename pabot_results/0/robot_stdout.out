@@ -1,0 +1,16 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Souq Product Search1 :: Souq - Product Search and Adding to WatchList  
+==============================================================================
+Verify basic search functionality :: This test case performs the b... | PASS |
+------------------------------------------------------------------------------
+Suites.Souq Product Search1 :: Souq - Product Search and Adding to... | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\mohammad.shaikh\PycharmProjects\TestProject\pabot_results\0\output.xml

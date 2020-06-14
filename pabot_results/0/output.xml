@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200610 19:02:31.743" rpa="false">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Souq Product Search1" source="C:\Users\mohammad.shaikh\PycharmProjects\TestProject\Tests\Souq Product Search1.robot">
+<test id="s1-s1-t1" name="Verify basic search functionality">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://saudi.souq.com/sa-en/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200610 19:02:32.253" level="INFO">Opening browser 'chrome' to base url 'https://saudi.souq.com/sa-en/'.</msg>
+<status status="PASS" starttime="20200610 19:02:32.253" endtime="20200610 19:02:46.421"></status>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>697</arg>
+<arg>735</arg>
+</arguments>
+<status status="PASS" starttime="20200610 19:02:46.421" endtime="20200610 19:02:48.399"></status>
+</kw>
+<kw name="Set Window Position" library="SeleniumLibrary">
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<arguments>
+<arg>28</arg>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20200610 19:02:48.399" endtime="20200610 19:02:49.505"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200610 19:02:50.508" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200610 19:02:49.505" endtime="20200610 19:02:50.508"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='search_value']</arg>
+</arguments>
+<status status="PASS" starttime="20200610 19:02:50.509" endtime="20200610 19:02:51.120"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='search_value']</arg>
+<arg>Apple iPhone 11 Pro Max</arg>
+</arguments>
+<msg timestamp="20200610 19:02:51.121" level="INFO">Typing text 'Apple iPhone 11 Pro Max' into text field '//input[@id='search_value']'.</msg>
+<status status="PASS" starttime="20200610 19:02:51.121" endtime="20200610 19:02:51.656"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@id='searchButton']</arg>
+</arguments>
+<msg timestamp="20200610 19:02:51.657" level="INFO">Clicking element '//button[@id='searchButton']'.</msg>
+<status status="PASS" starttime="20200610 19:02:51.657" endtime="20200610 19:02:57.260"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200610 19:02:58.262" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200610 19:02:57.261" endtime="20200610 19:02:58.262"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class='row collapse content medium-up-1 tpl-append-results']//div[1]//div[2]//a[1]//h1[1]</arg>
+</arguments>
+<msg timestamp="20200610 19:02:58.263" level="INFO">Clicking element '//div[@class='row collapse content medium-up-1 tpl-append-results']//div[1]//div[2]//a[1]//h1[1]'.</msg>
+<status status="PASS" starttime="20200610 19:02:58.262" endtime="20200610 19:03:04.522"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200610 19:03:05.523" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200610 19:03:04.522" endtime="20200610 19:03:05.523"></status>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[contains(@class,'cta button green-button text-center add-to-cart-button for-single-item ')]</arg>
+</arguments>
+<status status="PASS" starttime="20200610 19:03:05.523" endtime="20200610 19:03:07.535"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[contains(@class,'cta button green-button text-center add-to-cart-button for-single-item')]</arg>
+</arguments>
+<msg timestamp="20200610 19:03:07.536" level="INFO">Clicking element '//input[contains(@class,'cta button green-button text-center add-to-cart-button for-single-item')]'.</msg>
+<status status="PASS" starttime="20200610 19:03:07.536" endtime="20200610 19:03:11.017"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200610 19:03:14.019" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200610 19:03:11.017" endtime="20200610 19:03:14.019"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200610 19:03:14.019" endtime="20200610 19:03:17.258"></status>
+</kw>
+<doc>This test case performs the basic search on a product</doc>
+<tags>
+<tag>Functional</tag>
+</tags>
+<status status="PASS" starttime="20200610 19:02:32.252" endtime="20200610 19:03:17.258" critical="yes"></status>
+</test>
+<doc>Souq - Product Search and Adding to WatchList</doc>
+<status status="PASS" starttime="20200610 19:02:31.787" endtime="20200610 19:03:17.259"></status>
+</suite>
+<status status="PASS" starttime="20200610 19:02:31.745" endtime="20200610 19:03:17.260"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Souq Product Search1">Suites.Souq Product Search1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
