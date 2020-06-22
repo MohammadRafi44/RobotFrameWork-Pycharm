@@ -55,6 +55,7 @@ Verify basic search functionality
     click element  //input[@id='add-to-cart-button']
 
     sleep  2s
+    sleep  3s
     close browser
 
 *** Keywords ***
