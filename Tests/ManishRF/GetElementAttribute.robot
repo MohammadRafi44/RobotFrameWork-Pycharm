@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-#Variables  ../WebElements.py
+Variables  ../WebElements.py
 Documentation  Get Element Attribute to a variable and printing to console
 
 *** Variables ***
@@ -13,7 +13,7 @@ Get Element Attribute Test
     click element  xpath://span[contains(text(),'Ship to')]
     sleep  2s
     # the below gets the text of the web element
-    ${ABC} =  Get Web Element  xpath://*[@id="shipto-wrapper"]/div[3]/div[2]/span[2]
+    ${ABC} =  'Get WebElement'  xpath://*[@id="shipto-wrapper"]/div[3]/div[2]/span[2]
     sleep  1s
     log  ${ABC}
 #    ${ABC} =  Get Text  xpath://*[@id="shipto-wrapper"]/div[3]/div[2]/span[2]

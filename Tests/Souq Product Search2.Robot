@@ -18,11 +18,12 @@ Verify basic search functionality
     [Tags]  Functional
 
     open browser  https://saudi.souq.com/sa-en/  chrome
+    set browser implicit wait  5
 #    maximize browser window
 #    sleep  3s
     set window size  697  735
     set window position  637  0
-    sleep  1s
+
 
 #    ${element}=    'Get WebElement'    //input[@id='search_value']
 #    ${test}  'get webelement'    //input[@id='search_value']
@@ -38,19 +39,24 @@ Verify basic search functionality
 #      Execute Javascript var a =  document.getElementById('ext-comp-1155').getElementsByTagName("button"); a[0].click();
 
 #      ${lite}=  document.getElementByXpath(//input[@id='search_value']).
-#      Execute Javascript  ${lite}
 
-    Set Focus To Element  //input[@id='search_value']
-    input text  //input[@id='search_value']  Mac Book
-    click element  //button[@id='searchButton']
-    sleep  1s
-    set focus to element  //div[@class='row collapse content medium-up-1 tpl-append-results']//div[1]//div[2]//a[1]//h1[1]
-    click element  //div[@class='row collapse content medium-up-1 tpl-append-results']//div[1]//div[2]//a[1]//h1[1]
-    sleep  1s
-    Set Focus To Element  //input[contains(@class,'cta button green-button text-center add-to-cart-button for-single-item ')]
-    click element  //input[contains(@class,'cta button green-button text-center add-to-cart-button for-single-item')]
-    sleep  3s
+#      Execute Javascript  ${lite}
+    scroll element into view  //a[@id='visitAmazonAe']
+    click element  //a[@id='visitAmazonAe']
+
+    scroll element into view  //input[@id='twotabsearchtextbox']
+    input text  //input[@id='twotabsearchtextbox']  Mac Book
+    click element  //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']
+
+    scroll element into view  //span[contains(text(),'Apple MacBook Air MQD32 Laptop - Intel Core i5-1.8')]
+    click element  //span[contains(text(),'Apple MacBook Air MQD32 Laptop - Intel Core i5-1.8')]
+
+    scroll element into view  //input[@id='add-to-cart-button']
+    click element  //input[@id='add-to-cart-button']
+
+    sleep  2s
     close browser
+
 *** Keywords ***
 Highlight Element
     [Arguments]    ${loc}

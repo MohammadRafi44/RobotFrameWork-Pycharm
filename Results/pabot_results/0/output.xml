@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200611 20:37:40.347" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200621 20:07:41.589" rpa="false">
 <suite id="s1" name="Suites">
 <suite id="s1-s1" name="Souq Product Search1" source="C:\Users\mohammad.shaikh\PycharmProjects\TestProject\Tests\Souq Product Search1.robot">
 <test id="s1-s1-t1" name="Verify basic search functionality">
@@ -9,8 +9,15 @@
 <arg>https://saudi.souq.com/sa-en/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200611 20:37:41.221" level="INFO">Opening browser 'chrome' to base url 'https://saudi.souq.com/sa-en/'.</msg>
-<status status="PASS" starttime="20200611 20:37:41.221" endtime="20200611 20:38:03.434"></status>
+<msg timestamp="20200621 20:07:41.938" level="INFO">Opening browser 'chrome' to base url 'https://saudi.souq.com/sa-en/'.</msg>
+<status status="PASS" starttime="20200621 20:07:41.937" endtime="20200621 20:07:49.526"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200621 20:07:49.526" endtime="20200621 20:07:49.529"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -18,7 +25,7 @@
 <arg>697</arg>
 <arg>735</arg>
 </arguments>
-<status status="PASS" starttime="20200611 20:38:03.434" endtime="20200611 20:38:06.084"></status>
+<status status="PASS" starttime="20200621 20:07:49.530" endtime="20200621 20:07:51.390"></status>
 </kw>
 <kw name="Set Window Position" library="SeleniumLibrary">
 <doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
@@ -26,101 +33,99 @@
 <arg>28</arg>
 <arg>0</arg>
 </arguments>
-<status status="PASS" starttime="20200611 20:38:06.084" endtime="20200611 20:38:06.699"></status>
+<status status="PASS" starttime="20200621 20:07:51.390" endtime="20200621 20:07:51.877"></status>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
-<arg>1s</arg>
+<arg>//a[@id='visitAmazonAe']</arg>
 </arguments>
-<msg timestamp="20200611 20:38:07.701" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200611 20:38:06.699" endtime="20200611 20:38:07.701"></status>
+<status status="PASS" starttime="20200621 20:07:51.877" endtime="20200621 20:07:52.865"></status>
 </kw>
-<kw name="Set Focus To Element" library="SeleniumLibrary">
-<doc>Sets the focus to the element identified by ``locator``.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>//input[@id='search_value']</arg>
+<arg>//a[@id='visitAmazonAe']</arg>
 </arguments>
-<status status="PASS" starttime="20200611 20:38:07.701" endtime="20200611 20:38:07.779"></status>
+<msg timestamp="20200621 20:07:52.866" level="INFO">Clicking element '//a[@id='visitAmazonAe']'.</msg>
+<status status="PASS" starttime="20200621 20:07:52.866" endtime="20200621 20:07:52.957"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>//input[@id='twotabsearchtextbox']</arg>
+</arguments>
+<status status="PASS" starttime="20200621 20:07:52.957" endtime="20200621 20:08:00.676"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <arguments>
-<arg>//input[@id='search_value']</arg>
+<arg>//input[@id='twotabsearchtextbox']</arg>
 <arg>Apple iPhone 11 Pro Max</arg>
 </arguments>
-<msg timestamp="20200611 20:38:07.780" level="INFO">Typing text 'Apple iPhone 11 Pro Max' into text field '//input[@id='search_value']'.</msg>
-<status status="PASS" starttime="20200611 20:38:07.779" endtime="20200611 20:38:08.324"></status>
+<msg timestamp="20200621 20:08:00.677" level="INFO">Typing text 'Apple iPhone 11 Pro Max' into text field '//input[@id='twotabsearchtextbox']'.</msg>
+<status status="PASS" starttime="20200621 20:08:00.676" endtime="20200621 20:08:02.795"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>//button[@id='searchButton']</arg>
+<arg>//div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']</arg>
 </arguments>
-<msg timestamp="20200611 20:38:08.325" level="INFO">Clicking element '//button[@id='searchButton']'.</msg>
-<status status="PASS" starttime="20200611 20:38:08.324" endtime="20200611 20:38:12.743"></status>
+<msg timestamp="20200621 20:08:02.796" level="INFO">Clicking element '//div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']'.</msg>
+<status status="PASS" starttime="20200621 20:08:02.796" endtime="20200621 20:08:05.999"></status>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
-<arg>1s</arg>
+<arg>//div[@class='sg-col-inner']//div[1]//div[1]//span[1]//div[1]//div[1]//div[2]//h2[1]//a[1]//span[1]</arg>
 </arguments>
-<msg timestamp="20200611 20:38:13.745" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200611 20:38:12.743" endtime="20200611 20:38:13.746"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//div[@class='row collapse content medium-up-1 tpl-append-results']//div[1]//div[2]//a[1]//h1[1]</arg>
-</arguments>
-<msg timestamp="20200611 20:38:13.746" level="INFO">Clicking element '//div[@class='row collapse content medium-up-1 tpl-append-results']//div[1]//div[2]//a[1]//h1[1]'.</msg>
-<status status="PASS" starttime="20200611 20:38:13.746" endtime="20200611 20:38:19.479"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>1s</arg>
-</arguments>
-<msg timestamp="20200611 20:38:20.482" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200611 20:38:19.479" endtime="20200611 20:38:20.482"></status>
-</kw>
-<kw name="Set Focus To Element" library="SeleniumLibrary">
-<doc>Sets the focus to the element identified by ``locator``.</doc>
-<arguments>
-<arg>//input[contains(@class,'cta button green-button text-center add-to-cart-button for-single-item ')]</arg>
-</arguments>
-<status status="PASS" starttime="20200611 20:38:20.482" endtime="20200611 20:38:22.264"></status>
+<status status="PASS" starttime="20200621 20:08:06.000" endtime="20200621 20:08:06.594"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>//input[contains(@class,'cta button green-button text-center add-to-cart-button for-single-item')]</arg>
+<arg>//div[@class='sg-col-inner']//div[1]//div[1]//span[1]//div[1]//div[1]//div[2]//h2[1]//a[1]//span[1]</arg>
 </arguments>
-<msg timestamp="20200611 20:38:22.264" level="INFO">Clicking element '//input[contains(@class,'cta button green-button text-center add-to-cart-button for-single-item')]'.</msg>
-<status status="PASS" starttime="20200611 20:38:22.264" endtime="20200611 20:38:26.819"></status>
+<msg timestamp="20200621 20:08:06.595" level="INFO">Clicking element '//div[@class='sg-col-inner']//div[1]//div[1]//span[1]//div[1]//div[1]//div[2]//h2[1]//a[1]//span[1]'.</msg>
+<status status="PASS" starttime="20200621 20:08:06.594" endtime="20200621 20:08:09.474"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>//input[@id='add-to-cart-button']</arg>
+</arguments>
+<status status="PASS" starttime="20200621 20:08:09.475" endtime="20200621 20:08:09.822"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='add-to-cart-button']</arg>
+</arguments>
+<msg timestamp="20200621 20:08:09.823" level="INFO">Clicking element '//input[@id='add-to-cart-button']'.</msg>
+<status status="PASS" starttime="20200621 20:08:09.822" endtime="20200621 20:08:12.611"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>3s</arg>
+<arg>2s</arg>
 </arguments>
-<msg timestamp="20200611 20:38:29.821" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200611 20:38:26.820" endtime="20200611 20:38:29.821"></status>
+<msg timestamp="20200621 20:08:14.614" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200621 20:08:12.611" endtime="20200621 20:08:14.614"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200611 20:38:29.821" endtime="20200611 20:38:33.739"></status>
+<status status="PASS" starttime="20200621 20:08:14.615" endtime="20200621 20:08:16.917"></status>
 </kw>
 <doc>This test case performs the basic search on a product</doc>
 <tags>
 <tag>Functional</tag>
 </tags>
-<status status="PASS" starttime="20200611 20:37:41.220" endtime="20200611 20:38:33.739" critical="yes"></status>
+<status status="PASS" starttime="20200621 20:07:41.936" endtime="20200621 20:08:16.917" critical="yes"></status>
 </test>
 <doc>Souq - Product Search and Adding to WatchList</doc>
-<status status="PASS" starttime="20200611 20:37:40.419" endtime="20200611 20:38:33.742"></status>
+<status status="PASS" starttime="20200621 20:07:41.636" endtime="20200621 20:08:16.918"></status>
 </suite>
-<status status="PASS" starttime="20200611 20:37:40.351" endtime="20200611 20:38:33.747"></status>
+<status status="PASS" starttime="20200621 20:07:41.591" endtime="20200621 20:08:16.920"></status>
 </suite>
 <statistics>
 <total>

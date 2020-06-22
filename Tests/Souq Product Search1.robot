@@ -12,18 +12,24 @@ Verify basic search functionality
     [Tags]  Functional
 
     open browser  https://saudi.souq.com/sa-en/  chrome
+    set browser implicit wait  5
 #    sleep  3s
     set window size  697  735
     set window position  28  0
-    sleep  1s
-    Set Focus To Element  //input[@id='search_value']
-    input text  //input[@id='search_value']  Apple iPhone 11 Pro Max
-    click element  //button[@id='searchButton']
-    sleep  1s
-    click element  //div[@class='row collapse content medium-up-1 tpl-append-results']//div[1]//div[2]//a[1]//h1[1]
-    sleep  1s
-    Set Focus To Element  //input[contains(@class,'cta button green-button text-center add-to-cart-button for-single-item ')]
-    click element  //input[contains(@class,'cta button green-button text-center add-to-cart-button for-single-item')]
-    sleep  3s
+
+    scroll element into view  //a[@id='visitAmazonAe']
+    click element  //a[@id='visitAmazonAe']
+
+    scroll element into view  //input[@id='twotabsearchtextbox']
+    input text  //input[@id='twotabsearchtextbox']  Apple iPhone 11 Pro Max
+    click element  //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']
+
+    scroll element into view  //div[@class='sg-col-inner']//div[1]//div[1]//span[1]//div[1]//div[1]//div[2]//h2[1]//a[1]//span[1]
+    click element  //div[@class='sg-col-inner']//div[1]//div[1]//span[1]//div[1]//div[1]//div[2]//h2[1]//a[1]//span[1]
+
+    scroll element into view  //input[@id='add-to-cart-button']
+    click element  //input[@id='add-to-cart-button']
+
+    sleep  2s
     close browser
 
