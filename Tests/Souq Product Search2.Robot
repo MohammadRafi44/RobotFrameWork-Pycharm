@@ -56,6 +56,7 @@ Verify basic search functionality
 
     sleep  2s
     sleep  3s
+    sleep  4s
     close browser
 
 *** Keywords ***

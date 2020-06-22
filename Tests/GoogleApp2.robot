@@ -16,5 +16,6 @@ GoogleAppTest
     sleep  1s
     click element  //a[contains(text(),'Images')]
     sleep  2s
+    sleep  3s
     close browser
 
